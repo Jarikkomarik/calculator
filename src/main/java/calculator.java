@@ -326,13 +326,13 @@ public class calculator {
                         display.setText(disp);
                         break;
                     case "*":
-                        fistrOperand=fistrOperand*secondOperand;
+                        fistrOperand=Math.round((fistrOperand*secondOperand)*10000.0)/10000.0;
                         result=Double.toString(fistrOperand);
                         disp=result;
                         display.setText(disp);
                         break;
                     case "/":
-                        fistrOperand=fistrOperand/secondOperand;
+                        fistrOperand=Math.round((fistrOperand/secondOperand)*10000.0)/10000.0;
                         result=Double.toString(fistrOperand);
                         disp=result;
                         display.setText(disp);
